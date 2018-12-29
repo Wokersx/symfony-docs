@@ -655,6 +655,7 @@ lives in a subdirectory (e.g. ``http://example.com/my_app``), each asset path
 should render with the subdirectory (e.g. ``/my_app/images/logo.png``). The
 ``asset()`` function takes care of this by determining how your application is
 being used and generating the correct paths accordingly.
+**JS, CSS and images must be into public folder**
 
 .. tip::
 
@@ -742,8 +743,7 @@ template.
 
 You can also include assets located in your bundles' ``Resources/public/`` folder.
 You will need to run the ``php bin/console assets:install target [--symlink]``
-command, which copies (or symlinks) files into the correct location. (target
-is by default the "public/" directory of your application).
+command, which copies (or symlinks) files into the correct location.
 
 .. code-block:: html+twig
 
